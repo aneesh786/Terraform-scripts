@@ -1,0 +1,3 @@
+Terraform has got two main components
+config file (tf) and state provides input to Core. Based on the inputs, Core derives an execution plan and executes it. 
+
