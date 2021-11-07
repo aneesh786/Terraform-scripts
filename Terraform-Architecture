@@ -6,3 +6,10 @@ A basic terraform script will have below format
         key1=value1
         key2=value2
     }
+ Eg :- 
+ 
+    resource "local_file" "pet" {
+         filename = "/root/pet.txt"
+         content = "we love pets"
+    }
+  terraform init -> terraform plan -> terraform apply
