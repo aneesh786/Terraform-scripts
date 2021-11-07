@@ -1,3 +1,8 @@
 Terraform has got two main components
 config file (tf) and state provides input to Core. Based on the inputs, Core derives an execution plan and executes it. 
+A basic terraform script will have below format
 
+   <block> <parameters> {
+        key1=value1
+        key2=value2
+    }
