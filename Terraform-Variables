@@ -6,3 +6,12 @@ variable "filename" {
 variable "content" {
      default = "we love pets"
 }
+
+#######################################
+how to use above variables in terrafrom scripts as below
+#######################################
+
+resource "local_file" "pet" {
+     filename = var.filename
+     content  = var.content
+}
