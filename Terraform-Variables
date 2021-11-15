@@ -1,0 +1,8 @@
+## We can create a separate variable file in terraform like variables.tf which contains all the variables required for your task
+
+variable "filename" {
+     default = "/root/pets.txt"
+}
+variable "content" {
+     default = "we love pets"
+}
