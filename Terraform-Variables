@@ -24,3 +24,9 @@ variable "file_content" {
        "statement2" =  "we love animals"
       }
 }
+
+##To assign above content on any resource use below code##
+resource "local_file" "my_pet" {
+      filename = "/root/pet.txt"
+      content  = var.file_content["statement1"]
+}
