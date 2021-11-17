@@ -30,3 +30,32 @@ resource "local_file" "my_pet" {
       filename = "/root/pet.txt"
       content  = var.file_content["statement1"]
 }
+
+###For a list of strings in variable, use below code ###
+variable "prefix" {
+       default = ["Mr", "Mrs", "Sir"]
+       type    = list(string)
+}
+###For a lis of numbers, use below code###
+variable "prefix" {
+       default = [ 1,2,3 ]
+       type    = list(number)
+}
+###For a map of Type string, use below code###
+variable "prefix" {
+       default = {
+           "color" = "brown"
+           "name"  = "bella"
+       }
+       type = map(string)
+}
+###For a map of Type Number, use below code####
+variable "prefix" {
+      default = {
+        "dogs" = 3
+        "cats" = 1
+        "goldfish" = 2
+      }
+      type = map(number)
+}
+###We can also use 'set' instead of 'map'. Advantage of 'set' is it won't allow duplicate values###
